@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences
+    #splits string removing (.!?) then checks for empty space and removes it. 
     self.split(/[.!?]/).reject { |a| a.empty? }.count 
   end 
 end 
